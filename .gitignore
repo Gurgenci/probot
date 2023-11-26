@@ -1,0 +1,6 @@
+*.md
+.venv/*
+pop/
+tmp/
+.ipynb_checkpoints/
+
