@@ -3,4 +3,4 @@
 pop/
 tmp/
 .ipynb_checkpoints/
-
+.env

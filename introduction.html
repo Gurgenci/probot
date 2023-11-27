@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>embeddings</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>introduction</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7481,7 +7481,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="CS1---Install-Libraries,-define-main-variables,-and-some-basic-functions">CS1 - Install Libraries, define main variables, and some basic functions<a class="anchor-link" href="#CS1---Install-Libraries,-define-main-variables,-and-some-basic-functions">¶</a></h4>
+<h4 id="CS1---Install-Libraries,-define-main-variables,-and-some-basic-functions">CS1 - Install Libraries, define main variables, and some basic functions<a class="anchor-link" href="#CS1---Install-Libraries,-define-main-variables,-and-some-basic-functions">¶</a></h4><p>You can convert this notebook to HTML by entering the following command in the VS Code terminal window:</p>
+<p><code>jupyter nbconvert --no-input --to html introduction.ipynb</code></p>
+<p><em>Make sure that the terminal window is running in the same virtual environment.  On my Mac computer, if the terminal prompt is <code>(.venv) $ </code> then I know it is running in the virtual environment.  Otherwise, I enter <code>source venv/bin/activate</code> to put it into the virtual environment</em></p>
+<p>CS1, CS2, CS3, etc. are Code cells in the notebook and they do not appear in the HTML output.  You have to look into the notebook file (<code>introduction.ipynb</code>) to see their contents.</p>
 </div>
 </div>
 </div>
@@ -7497,74 +7500,9 @@ Note: you may need to restart the kernel to use updated packages.
 Note: you may need to restart the kernel to use updated packages.
 Note: you may need to restart the kernel to use updated packages.
 Note: you may need to restart the kernel to use updated packages.
-Collecting nbconvert
-  Downloading nbconvert-7.11.0-py3-none-any.whl.metadata (7.7 kB)
-Requirement already satisfied: beautifulsoup4 in ./.venv/lib/python3.11/site-packages (from nbconvert) (4.12.2)
-Collecting bleach!=5.0.0 (from nbconvert)
-  Downloading bleach-6.1.0-py3-none-any.whl.metadata (30 kB)
-Collecting defusedxml (from nbconvert)
-  Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
-Collecting jinja2&gt;=3.0 (from nbconvert)
-  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
-     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">133.1/133.1 kB</span> <span class="ansi-red-fg">3.0 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>a <span class="ansi-cyan-fg">0:00:01</span>
-Requirement already satisfied: jupyter-core&gt;=4.7 in ./.venv/lib/python3.11/site-packages (from nbconvert) (5.5.0)
-Collecting jupyterlab-pygments (from nbconvert)
-  Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl.metadata (4.4 kB)
-Collecting markupsafe&gt;=2.0 (from nbconvert)
-  Downloading MarkupSafe-2.1.3-cp311-cp311-macosx_10_9_universal2.whl.metadata (3.0 kB)
-Collecting mistune&lt;4,&gt;=2.0.3 (from nbconvert)
-  Downloading mistune-3.0.2-py3-none-any.whl.metadata (1.7 kB)
-Collecting nbclient&gt;=0.5.0 (from nbconvert)
-  Downloading nbclient-0.9.0-py3-none-any.whl.metadata (7.8 kB)
-Collecting nbformat&gt;=5.7 (from nbconvert)
-  Downloading nbformat-5.9.2-py3-none-any.whl.metadata (3.4 kB)
-Requirement already satisfied: packaging in ./.venv/lib/python3.11/site-packages (from nbconvert) (23.2)
-Collecting pandocfilters&gt;=1.4.1 (from nbconvert)
-  Downloading pandocfilters-1.5.0-py2.py3-none-any.whl (8.7 kB)
-Requirement already satisfied: pygments&gt;=2.4.1 in ./.venv/lib/python3.11/site-packages (from nbconvert) (2.16.1)
-Collecting tinycss2 (from nbconvert)
-  Downloading tinycss2-1.2.1-py3-none-any.whl (21 kB)
-Requirement already satisfied: traitlets&gt;=5.1 in ./.venv/lib/python3.11/site-packages (from nbconvert) (5.13.0)
-Requirement already satisfied: six&gt;=1.9.0 in ./.venv/lib/python3.11/site-packages (from bleach!=5.0.0-&gt;nbconvert) (1.16.0)
-Collecting webencodings (from bleach!=5.0.0-&gt;nbconvert)
-  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
-Requirement already satisfied: platformdirs&gt;=2.5 in ./.venv/lib/python3.11/site-packages (from jupyter-core&gt;=4.7-&gt;nbconvert) (3.11.0)
-Requirement already satisfied: jupyter-client&gt;=6.1.12 in ./.venv/lib/python3.11/site-packages (from nbclient&gt;=0.5.0-&gt;nbconvert) (8.5.0)
-Collecting fastjsonschema (from nbformat&gt;=5.7-&gt;nbconvert)
-  Downloading fastjsonschema-2.19.0-py3-none-any.whl.metadata (2.0 kB)
-Collecting jsonschema&gt;=2.6 (from nbformat&gt;=5.7-&gt;nbconvert)
-  Downloading jsonschema-4.20.0-py3-none-any.whl.metadata (8.1 kB)
-Requirement already satisfied: soupsieve&gt;1.2 in ./.venv/lib/python3.11/site-packages (from beautifulsoup4-&gt;nbconvert) (2.5)
-Requirement already satisfied: attrs&gt;=22.2.0 in ./.venv/lib/python3.11/site-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=5.7-&gt;nbconvert) (23.1.0)
-Collecting jsonschema-specifications&gt;=2023.03.6 (from jsonschema&gt;=2.6-&gt;nbformat&gt;=5.7-&gt;nbconvert)
-  Downloading jsonschema_specifications-2023.11.1-py3-none-any.whl.metadata (2.8 kB)
-Collecting referencing&gt;=0.28.4 (from jsonschema&gt;=2.6-&gt;nbformat&gt;=5.7-&gt;nbconvert)
-  Downloading referencing-0.31.0-py3-none-any.whl.metadata (2.6 kB)
-Collecting rpds-py&gt;=0.7.1 (from jsonschema&gt;=2.6-&gt;nbformat&gt;=5.7-&gt;nbconvert)
-  Downloading rpds_py-0.13.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.7 kB)
-Requirement already satisfied: python-dateutil&gt;=2.8.2 in ./.venv/lib/python3.11/site-packages (from jupyter-client&gt;=6.1.12-&gt;nbclient&gt;=0.5.0-&gt;nbconvert) (2.8.2)
-Requirement already satisfied: pyzmq&gt;=23.0 in ./.venv/lib/python3.11/site-packages (from jupyter-client&gt;=6.1.12-&gt;nbclient&gt;=0.5.0-&gt;nbconvert) (25.1.1)
-Requirement already satisfied: tornado&gt;=6.2 in ./.venv/lib/python3.11/site-packages (from jupyter-client&gt;=6.1.12-&gt;nbclient&gt;=0.5.0-&gt;nbconvert) (6.3.3)
-Downloading nbconvert-7.11.0-py3-none-any.whl (256 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">256.6/256.6 kB</span> <span class="ansi-red-fg">9.9 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading bleach-6.1.0-py3-none-any.whl (162 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">162.8/162.8 kB</span> <span class="ansi-red-fg">7.5 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading MarkupSafe-2.1.3-cp311-cp311-macosx_10_9_universal2.whl (17 kB)
-Downloading mistune-3.0.2-py3-none-any.whl (47 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">48.0/48.0 kB</span> <span class="ansi-red-fg">4.3 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading nbclient-0.9.0-py3-none-any.whl (24 kB)
-Downloading nbformat-5.9.2-py3-none-any.whl (77 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">77.6/77.6 kB</span> <span class="ansi-red-fg">8.4 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading jupyterlab_pygments-0.3.0-py3-none-any.whl (15 kB)
-Downloading jsonschema-4.20.0-py3-none-any.whl (84 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">84.7/84.7 kB</span> <span class="ansi-red-fg">4.8 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading fastjsonschema-2.19.0-py3-none-any.whl (23 kB)
-Downloading jsonschema_specifications-2023.11.1-py3-none-any.whl (17 kB)
-Downloading referencing-0.31.0-py3-none-any.whl (25 kB)
-Downloading rpds_py-0.13.1-cp311-cp311-macosx_11_0_arm64.whl (327 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">327.2/327.2 kB</span> <span class="ansi-red-fg">12.1 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Installing collected packages: webencodings, fastjsonschema, tinycss2, rpds-py, pandocfilters, mistune, markupsafe, jupyterlab-pygments, defusedxml, bleach, referencing, jinja2, jsonschema-specifications, jsonschema, nbformat, nbclient, nbconvert
-Successfully installed bleach-6.1.0 defusedxml-0.7.1 fastjsonschema-2.19.0 jinja2-3.1.2 jsonschema-4.20.0 jsonschema-specifications-2023.11.1 jupyterlab-pygments-0.3.0 markupsafe-2.1.3 mistune-3.0.2 nbclient-0.9.0 nbconvert-7.11.0 nbformat-5.9.2 pandocfilters-1.5.0 referencing-0.31.0 rpds-py-0.13.1 tinycss2-1.2.1 webencodings-0.5.1
+Note: you may need to restart the kernel to use updated packages.
+Note: you may need to restart the kernel to use updated packages.
+Note: you may need to restart the kernel to use updated packages.
 Note: you may need to restart the kernel to use updated packages.
 </pre>
 </div>
@@ -7619,7 +7557,7 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[0.99999998 0.99999993 0.99999998 1.00000004]
+<pre>[0.99999998 0.99999993 0.99999998 0.99999997]
 </pre>
 </div>
 </div>
@@ -7642,7 +7580,7 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
-<h1 id="TEXT-EMBEDDINGS">TEXT EMBEDDINGS<a class="anchor-link" href="#TEXT-EMBEDDINGS">¶</a></h1><h4 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">¶</a></h4><p><em>2023</em></p>
+<h1 id="HOW-TO-TRAIN-CHATBOTS-TO-BECOME-PROFESSIONALS">HOW TO TRAIN CHATBOTS TO BECOME PROFESSIONALS<a class="anchor-link" href="#HOW-TO-TRAIN-CHATBOTS-TO-BECOME-PROFESSIONALS">¶</a></h1><h4 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">¶</a></h4><p><em>2023</em></p>
 <table>
 <thead>
 <tr>
@@ -7657,7 +7595,7 @@ Note: you may need to restart the kernel to use updated packages.
 </tr>
 <tr>
 <td style="text-align:left">2</td>
-<td style="text-align:left"><a href="#Install-Python">Install Python</a></td>
+<td style="text-align:left"><a href="#Please-Join-Me">Please Join Me</a></td>
 </tr>
 <tr>
 <td style="text-align:left">3</td>
@@ -7677,7 +7615,7 @@ Note: you may need to restart the kernel to use updated packages.
 </tr>
 </tbody>
 </table>
-<p>Text Embeddings used in Large Language Models (LLMs)</p>
+<p>I am starting this new project in which I will investigate ways of training chatbots like ChatGPT to become professionals like graduate engineers who can complete engineering tasks autonomously and accurately.  You may want explore training chatbots to become experts in your area of interest.  If this is so, please join me in this journey.  We can compare our notes along the way and help each other.  Later in this note I describe how this collaboration may take place.</p>
 </div>
 </div>
 </div>
@@ -7695,19 +7633,32 @@ Note: you may need to restart the kernel to use updated packages.
 <li>Thinks they know everything</li>
 </ul>
 <p>When you ask them a question you always get an answer because, if they do not know the answer, they would make it up</p>
-<p>In March 2023, I said that a competent intelligence would be like a college graduate but a general LLM like GPT-44 or even a future GPT-5 would have to be trained to get there.  Today, there are two paths for a general LLM, i.e. an LLM straight out of high school, to get higher education:</p>
+<p>In March 2023, I said that LLMs were not yet competent enough to deliver professional functions such as engineering. A competent intelligence would be equivalent to a college graduate.  GPT-4 or even a future GPT-5 would have to be further trained to get there.  Today, there are two paths for a general LLM, i.e. an LLM straight out of high school, to get 'higher education':</p>
 <ul>
 <li>Fine Tuning</li>
 <li>Retrieval Augmented Generation (RAG)</li>
 </ul>
 <p><img alt="alt text" src="pics/LLMStudent.jpg" title="LLMStudent.jpg"/></p>
 <p><i>Figure 1.1. </i></p>
-<p>I am a retired university teacher.  One might argue that it was natural for me to become interested in providing 'university' training to the LLMs.  I mentioned this interest in March 2023 but was not sure yet how to go about it.  I have been watching the progress in the field since then.  A number of tools have been proposed during this time but I found them to be lacking in one way or another. I did not want to invest my time in a tool that would not be around long.  The situation has now changed. I am happy to say that the OpenAI offerings early November provides a path for people like me to develop tools to train LLMs to competence levels of a college graduate. They are not perfect but good enough to provide a starting point.</p>
+<p>I am a retired university teacher.  One might argue that it was natural for me to become interested in providing 'university' training to the LLMs.  I mentioned this interest in March 2023 but was not sure yet how to go about it.  I have been watching the progress in the field since then.  A number of tools have been proposed but were lacking in one way or another. I did not want to invest my time in a tool that would not be around long.  The situation has now changed. I am happy to say that the OpenAI offerings early November provides a path for people like me to develop tools to train LLMs to competence levels of a college graduate. They are not perfect but good enough to provide a starting point.</p>
 <p>I am planning to use Retrieval Augmented Generation (RAG) to do this. Before I justify this choice, I should give a very brief description of the two methods mentioned above.</p>
-<h2 id="Fine-Tuning">Fine Tuning<a class="anchor-link" href="#Fine-Tuning">¶</a></h2><p>This method is a repetition of the initial training of the LLM.  Remember that the model is already trained on a large corpus of text.  The fine tuning is done on a smaller corpus of text that is specific to the task at hand. In human education terms, this is similar to recitation learning like in islamic madrasas.  The madrasa students keeo reciting religious texts without necessarily understanding context.  Similarly, in fine-tuning, the LLM is given a body of text in a specific domain and is trained to tease out the probabilistic relations connecting different words to each other in this specific domain, which may be slightly different from the original relations developed using an entire corpus of general internet and other sources. As in its original initial training, there is no contextual knowledge relations here just probabilities.</p>
+<h2 id="Fine-Tuning">Fine Tuning<a class="anchor-link" href="#Fine-Tuning">¶</a></h2><p>This method is a repetition of the initial training of the LLM.  Remember that the model is already trained on a large corpus of text.  The fine tuning is done on a smaller corpus of text that is specific to the task at hand. In human education terms, this is similar to recitation learning like in islamic madrasas.  The madrasa students keeo reciting religious texts without necessarily understanding context.  Similarly, in fine-tuning, the LLM is given a body of text in a specific domain and is trained to develop the probabilistic relations connecting different words to each other in this specific domain, which may be slightly different from the original relations developed using an entire corpus of general internet and other sources. As in its original initial training, there is no contextual knowledge relations here just probabilities.</p>
 <p>Either the entire parameter set (weights and biases) of the LLM is fine tuned or only the last layer is fine tuned. The fine-tuning starts with unsupervised learning, which is usually reinforced by human feedback.</p>
-<p>I decided not to use fine-tuning because at the end the answer will still be probabilistic and not contextual.A probalistic answer may be adequate in non-numerical fields such as law but it is totally unacceptable in say engineering where categorical answers are needed and if a numerical response is asked for, it should be accurate with reliabilities exceeding 99%</p>
-<p>In a way, it is good that there are good reasons for me not to pick fine-tuning as my method of choice because I do not have access to the computing power needed to do fine-tuning. It is possible to use OpenaAI API but this would be expensive.  I also think some heuristic methods need to be used in addition to running fine-tuning through the API and I do not think this would be possible when using the OpenAI as a black box.</p>
+<p>I decided not to use fine-tuning because at the end the answer will still be probabilistic and not contextual.A probabilistic answer may be adequate in non-numerical fields such as law but it is totally unacceptable in say engineering where categorical answers are needed and if a numerical response is asked for, it should be accurate with reliabilities exceeding 99%</p>
+<p>In a way, I am happy that there are good reasons for me not to pick fine-tuning as my method of choice because I would not be able to do it anyway.  I do not have access to the computing power needed to do fine-tuning. It is possible to fine-tune using OpenaAI API but this would be expensive.  I also think some heuristic methods need to be used in addition to running fine-tuning through the API and I do not think this would be possible when using the OpenAI as a black box.</p>
+<h2 id="Retrieval-Augmented-Generation-(RAG)">Retrieval Augmented Generation (RAG)<a class="anchor-link" href="#Retrieval-Augmented-Generation-(RAG)">¶</a></h2><p>If fine-tuning is like recitation learning, RAG is like contextual learning.  In RAG, there is a retriever program between the user and the LLM.  When the user asks a question, the retriever program retrieves the most relevant text from a corpus of text and feeds it to the LLM.  The LLM then generates a response.  The response is then fed back to the retriever program to determine if the response is relevant to the question.  If it is not, the retriever program retrieves another text from the corpus and the process is repeated until a relevant response is obtained.</p>
+<p>Most of the current interest in RAG is in building company chatbots where the corpus of text is the company's knowledge base.  The retriever program is usually a search engine. The corpus of text precedes RAG and is developed independent of the RAG effort.</p>
+<p>This is not my interest.  I am interested in developing a corpus of text that is specific to a specific area in which I have knowledge.  In other words, I approach RAG like writing a textbook for a course.  The difference is that writing a textbook for a LLM is probably different from writinga conventionjal textbook as we know textbooks now.</p>
+<p>Let me give an example.  Suppose that I am an expert on Australian wildlife and I want to develop a chatbot that people can ask questions about Australian wildlife. I will first organise my knowledge in series of text files:</p>
+<p><img alt="alt text" src="pics/corpus.jpg" title="corpus.jpg"/></p>
+<p><i>Figure 1.2. </i></p>
+<p>Then I will develop a retriever program that will retrieve the most relevant text file from the corpus and feed it to the LLM.  The LLM will then generate a response.  The response is then fed back to the retriever program to determine if the response is relevant to the question.  If it is not, the retriever program retrieves another text file from the corpus and the process is repeated until a relevant response is obtained.</p>
+<p><img alt="alt text" src="pics/ragprocess.jpg" title="ragprocess.jpg"/></p>
+<p><i>Figure 1.3. </i></p>
+<h3 id="How-does-Retriever-Program-work?">How does Retriever Program work?<a class="anchor-link" href="#How-does-Retriever-Program-work?">¶</a></h3><p>We cannot rely on a simple text matching search because the user may not use the same words as in the corpus. Therefore, we need to use a semantic search.  To do semantic search, both the corpus text and the  user's question must be converted to vectors.  The vectors are then compared to each other.  These vectors are called embeddings.  The embeddings are generated by the LLM.  The LLM is trained to generate embeddings that are similar to each other if the text is similar.</p>
+<p>In summary, the beginning place is the embeddings.  We have to understand how embeddings work so that we can try different styles in writing our corpus text that will generate the most relevant embeddings.</p>
+<p>In my next post I will write about embeddings.  I will show how they can be generated using the OpenAI API and also demonstrate some of their features most relevant to our task.</p>
+<p>The remainder of this post is technical information to help you start if you are interested in foillowing me in this journey.</p>
 </div>
 </div>
 </div>
@@ -7718,12 +7669,26 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
-<h1 id="Install-Python">Install Python<a class="anchor-link" href="#Install-Python">¶</a></h1><p>Download and install python from [<a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>] if you do not have it already.  At the time I started this notebook,</p>
+<h1 id="Please-Join-Me">Please Join Me<a class="anchor-link" href="#Please-Join-Me">¶</a></h1><p>As you can see I am not trying to develop new programs to do RAG.  I wil use existing programs but I will experiment with different styles of writing the corpus text to see which style generates the most relevant embeddings. I will also experiment with different ways of retrieving the most relevant text from the corpus.  I suspect there will be room for some heuristics here.</p>
+<p>If you have an area of expertise which you would like to share with the world using this new technology, please join me.  I will be regularly (hopefully fortnightly) posting my progress on Substack.  I will also be posting my code on Github.  I will be using Python and the OpenAI API. In addition, I created an X (formerly known as Twitter) Community Group '<a href="https://twitter.com/i/communities/1727552258454474973">Building AI Tutors</a>'. If you are interested, please join the group.  I will be posting my progress there as well.</p>
+<p>You do not need to be an experienced Python programmer but some knowledge of Python will be helpful.  Below I list the steps you need to take to join me and explain how to go about it:</p>
 <ul>
+<li>Install VS Code from <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a>.  This is a free code editor and development environment.  It is the tool I am using therefore should be able to help you if you have problems.</li>
+<li>Install Python from <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.  At the time I started this notebook,<ul>
 <li>I had <code>python 3.10.11</code> installed on my Windows computer.</li>
 <li>Python 3.11.1 on my Mac</li>
 </ul>
+</li>
+</ul>
+<p>Download my <code>probot</code> files <a href="https://github.com/Gurgenci/probot">from my account on github</a>.  I do not think you need to have a github account to do this.  You can download the whole <code>probot</code> folder as a zip pack and unzip to your local disk.</p>
+<p>Getting a github account has advantages and you can probably explore them in the future</p>
 </div>
 </div>
 </div>
@@ -7733,19 +7698,37 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>3
+</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
 <h1 id="Set-up-Virtual-Environment">Set up Virtual Environment<a class="anchor-link" href="#Set-up-Virtual-Environment">¶</a></h1><p>It is good practice to have a virtual environment dedicated to the project. This is to ensure that the project has all the required libraries and versions. The virtual environment must be created as the first action after creating the file before installing any libraries.</p>
 <p>I am running this Jupyter notebook in VS Code.  If you are using another editor, your method will be different.  In VS Code, I create the virtual environment using <code>CTRL</code>+<code>SHIFT</code>+<code>P</code> $\rightarrow$  <code>Pyton: Create Environment</code>$\rightarrow$ Pick the <code>venv</code> option.</p>
 <p>This creates a <code>.venv</code> folder in the project folder.  The <code>.venv</code> folder is where the virtual environment is. Here are the contents of the <code>pyvenv.cfg</code> generated under <code>.venv</code> :</p>
-<h3 id="WINDOWS">WINDOWS<a class="anchor-link" href="#WINDOWS">¶</a></h3><p>home = <code>C:\Users\e4hgurge\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0</code></p>
-<p>include-system-site-packages = false</p>
-<p>version = 3.10.11</p>
-<h3 id="MAC">MAC<a class="anchor-link" href="#MAC">¶</a></h3><p>home = /Library/Frameworks/Python.framework/Versions/3.11/bin</p>
-<p>include-system-site-packages = false</p>
-<p>version = 3.11.1</p>
-<p>executable = /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11</p>
-<p>command = /usr/local/bin/python3 -m venv /Users/Halim/openAI/openAI_first/.venv</p>
+<h3 id="WINDOWS">WINDOWS<a class="anchor-link" href="#WINDOWS">¶</a></h3><pre><code>
+home = `C:\Users\e4hgurge\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0`
+
+include-system-site-packages = false
+
+version = 3.10.11
+
+</code></pre>
+<h3 id="MAC">MAC<a class="anchor-link" href="#MAC">¶</a></h3><pre><code>
+home = /Library/Frameworks/Python.framework/Versions/3.11/bin
+
+include-system-site-packages = false
+
+version = 3.11.1
+
+executable = /Library/Frameworks/Python.framework/Versions/3.11/bin/python3.11
+
+command = /usr/local/bin/python3 -m venv /Users/Halim/openAI/openAI_first/.venv
+
+</code></pre>
 <p><strong>IMPORTANT</strong></p>
 <p>Every time you start VS Code, you must make sure you are running in the virtual environment. The environment can be seen in the upper right corner of the VS Code window.  If you are not running in the virtual environment, click there on the upper right corner on the displayed Python version and select the virtual environment.</p>
 <p>Sometime, VSCode tells me that running under <code>venv</code> requires the <code>ipykernel</code>. It will ask me whether to install it.  I always accept the offer click on <code>Install</code>.</p>
@@ -7758,6 +7741,12 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>4
+</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
 <h1 id="Establish-OpenAI-Credentials">Establish OpenAI Credentials<a class="anchor-link" href="#Establish-OpenAI-Credentials">¶</a></h1><p>You need to have an <code>openai</code> account to place python calls to <code>openai</code> platform (openAI API).  This means openai will charge you for the usage.  I have an openai account where I set the monthly limit to 120 dollars (Australian).  The monthly limit is necessary.  Otherwise, you can make a coding error for example that will make your program call openai 100 times a second and run a huge bill.  So far, my monthly bill has not reached $1 yet.  So for the stuff we are doing here, the charge is trivial.</p>
@@ -7795,6 +7784,19 @@ Note: you may need to restart the kernel to use updated packages.
 <li>Load the profile using <code>source ~/.zshrc</code></li>
 <li>Verify the set-up by typing <code>echo $OPENAI_API_KEY</code></li>
 </ul>
+<p><strong>IMPORTANT</strong> You can use the methods above to set the OPENAI_API_KEY.  The alternative is to set it in the code itself explicitly but this is not recommended.  It is not recommended because When you send that file to someone else or upload it to github, then everyone would see your OPENAI_API_KEY.</p>
+<p>I tried the above methods and, unfortunately, I found them unreliable.  The problem occurs when running a jupyter notebook in VS Code.  The environment variables for the jupyter notebook are sometimes retrieved beyond your control from a location different from the VS Code default environment.  Then, the notebook cannot access your OPENAI_API_KEY which is usually set in your home directory in the bash profile (<code>.zshrc</code>).  This problem first occurred for me  when I copied my folder to another location on my disk.  The notebook was running perfectly well in one location but stopped in the new location because it could not access my OPENAI_API_KEY.  The problem was exacerbated with OpenAI platform cancelling my access key probably after receiving invalid access requests.  AFter wasting three hours running in circles and failing to rectify the problem, I decided from there on to keep my environment variables in the project folder.  This is how you do it:</p>
+<ul>
+<li>Create the file <code>.env</code> in the project folder</li>
+<li>Enter the line <code>OPENAI_API_KEY='my-api-key-here'</code> in the <code>.env</code> file</li>
+<li><code>pip install python-dotenv</code> as I do in CS1 section above</li>
+<li>In the notebook, add the following lines at the beginning of the notebook:</li>
+</ul>
+<pre><code>import dotenv
+dotenv.load_dotenv()
+import os
+print(os.getenv('OPENAI_API_KEY'))
+</code></pre>
 </div>
 </div>
 </div>
@@ -7805,8 +7807,15 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>5
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
-<h1 id="What-is-an-embedding?">What is an embedding?<a class="anchor-link" href="#What-is-an-embedding?">¶</a></h1><p>In Large Language Models (LLMs) an embedding is a list of numbers, which are between -1 and +1.  This list is referred to as the embedding vector. The embedding vector represents the features of the text string.  The embedding vector is created by a neural network.  The neural network is trained on a large corpus of text.</p>
+<h1 id="What-is-an-embedding?">What is an embedding?<a class="anchor-link" href="#What-is-an-embedding?">¶</a></h1><p>I will explain embeddings in detail in my next post.  However, I thought I should give you a brief introduction to embeddings here.</p>
+<p>In Large Language Models (LLMs) an embedding is a list of numbers, which are between -1 and +1.  This list is referred to as the embedding vector. The embedding vector represents the features of the text string.  The embedding vector is created by a neural network.  The neural network is trained on a large corpus of text.</p>
 <p>You can think of the embedding vector as a point in a high dimensional space.  The number of dimensions is the number of numbers in the embedding vector.</p>
 <p>Let me use an example from everyday life to explain the concept of embedding.  Suppose you are a real estate agent.  You have a list of houses for sale.  Each house has a number of features such as number of bedrooms, number of bathrooms, size of the land, size of the house, etc.  You can think of each house as a point in a high dimensional space.  The number of dimensions is the number of features.  The features are the numbers that describe the house.  The features are the coordinates of the point in the high dimensional space.  The coordinates are the numbers that describe the house.  The coordinates are the features of the house.  The coordinates are the embedding vector of the house.</p>
 <h3 id="Numerical-Example">Numerical Example<a class="anchor-link" href="#Numerical-Example">¶</a></h3><p>In another example, assume you are the CEO of a very large company with hundreds of branches around the country.  Your HR Department wants to give an award to the best branch in terms of the human resources.</p>
@@ -7890,12 +7899,37 @@ Note: you may need to restart the kernel to use updated packages.
 <li>Text embedding vectors used in LLMs are comparable because they are normalised.  The normalisation is done by the neural network that creates the embedding vectors.</li>
 </ul>
 <h3 id="Embedding-vectors-in-LLMs">Embedding vectors in LLMs<a class="anchor-link" href="#Embedding-vectors-in-LLMs">¶</a></h3><p>As an example, I computed the embedding vectors and the magnitudes of those vectors for the following text strings:</p>
-<p>|String|Embedding Vector Magnitude|Embedding Vector Length
-|--|--|---|
-|There are four sides to a square.|1.00000|1536|
-|There are three sides to a triangle.|1.00000|1536|
-|There are five sides to a pentagon.|1.00000|1536|
-|In a footbal game, there are eleven players on each team.|1.00000|1536|</p>
+<table>
+<thead>
+<tr>
+<th>String</th>
+<th>Embedding Vector Magnitude</th>
+<th>Embedding Vector Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>There are four sides to a square.</td>
+<td>1.00000</td>
+<td>1536</td>
+</tr>
+<tr>
+<td>There are three sides to a triangle.</td>
+<td>1.00000</td>
+<td>1536</td>
+</tr>
+<tr>
+<td>There are five sides to a pentagon.</td>
+<td>1.00000</td>
+<td>1536</td>
+</tr>
+<tr>
+<td>In a footbal game, there are eleven players on each team.</td>
+<td>1.00000</td>
+<td>1536</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
