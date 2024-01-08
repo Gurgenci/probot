@@ -107,6 +107,21 @@ def read_page_list(filename):
         page_list.append((lines[i].strip(),lines[i+1].strip()))
     return page_list
 
+def embedpagelist(page_list, verbose=False):
+    embed_list=[]
+    for (itext,pair) in enumerate(page_list):
+        print("%02d: %s" % (itext+1, pair[1]), end="")
+        url=pair[0]
+        text=rdweb(url, None)
+        sa=sepstr(text, SEP)
+        for (isegment, s) in enumerate(sa):
+            v=get_embedding(s)
+            w=np.append(v,[itext,isegment])
+            embed_list.append(w)
+        print(" --> %d segments" % len(sa))
+    embeddings=np.array(embed_list)
+    return embeddings
+
 def embedweb(webfolder=WebFolder, model=DefaultLLM):
 # This function embeds all the texts in the web folder
     # It first creates the string TextListFile that contains the list of URLs and the list of texts
@@ -125,16 +140,7 @@ def embedweb(webfolder=WebFolder, model=DefaultLLM):
     TextListFile="data/"+webfolder+"_textlist.txt"
     EmbeddingFileName="data/"+webfolder+"_embed.npz"
     page_list=read_page_list(TextListFile)
-    embed_list=[]
-    for (itext,pair) in enumerate(page_list):
-        url=pair[0]
-        text=rdweb(url, None)
-        sa=sepstr(text, SEP)
-        for (isegment, s) in enumerate(sa):
-            v=get_embedding(s)
-            w=np.append(v,[itext,isegment])
-            embed_list.append(w)
-    embeddings=np.array(embed_list)
+    embeddings=embedpagelist(page_list)
     # Save the embeddings to a file
     metadata={"model":LLM, "webfolder":webfolder, "textlist":TextListFile, "texts":page_list}
     np.savez(EmbeddingFileName,data=embeddings, metadata=metadata)

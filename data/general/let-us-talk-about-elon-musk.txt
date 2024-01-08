@@ -1,0 +1,94 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let us talk about Elon Musk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Halim’in Günlüğü --- Halim's DiarySubscribeSign inShare this postLet us talk about Elon Muskhalimgur.substack.comCopy linkFacebookEmailNoteOtherGeneralLet us talk about Elon MuskWe live through an age that we'll survive only through our ingenuity. I believe Elon Musk is a source where that ingenuity will be coming from.Oct 30, 20232Share this postLet us talk about Elon Muskhalimgur.substack.comCopy linkFacebookEmailNoteOtherSharePlease subscribe; please share.  This blog will always be free but worthy reading.Turkish EditionSubscribe for free to keep receiving new postsSubscribeShareTurkish youth celebrates the Centennial showing their respect for the founder of the Republic, Mustafa Kemal Atatürk-+-+-+-+Some people  use the word "polycrisis" for the apparent mess we are in.  This means multiple concurrent crises that intersect and exacerbate each other. I do not use this word.  We are living through multiple concurrent crises yet I see them as a feature of something bigger going on.European nations started the technological progress with the invention of the steam engine and industrial revolution and the rest of the world imitated them.  This terminated in a unipolar world order in the last quarter of the twentieth century with US as the undisputed military and economic hegemon.  Interestingly, the confirmation of US as the top dog coincides with the commencement of the technology stagnation.  This era is about to end as a result of two threads unfolding concurrently.  The world is becoming multi-polar again and the technology forces that have been stagnating for fifty years are again resuming their rapid rise.  If you are new my blog, start here and continue with the subsequent weekly posts.For this coming new age, I decided to use the term ROGUE Age, Renaissance On Globe with Upheavals Everywhere.-+-+-+-+In the ROGUE Age, the technological advance will be the main determinant again as it was in the nineteenth century and the scientists and engineers who make these advances possible will become household names for future schoolchildren as Watt, Edison, Graham Bell, Marconi for my generation.One of such names future schoolchildren will memorise is Elon Musk.  In an earlier post, I wrote about how Musk's SpaceX company managed to reduce the cost of lifting things to the orbit by an order of magnitude in less than a decade.  This is only one part of what he is doing.  I think Elon Musk is going to be remembered as one of the best engineering enterpreneurs of the twenty-first century.  If I were a young engineering graduate today, I would try very hard to get an opportunity to work for him.  Alas, I am a 68-year old retired Professor of Mechanical Engineering and the best I can do is to write about him to hopefully inspire young engineers who follow my posts to try to be like Musk.An excellent biography has just been published, written by Walter Isaacson.  I read Isaacson’s biography of Leonardo Da Vinci two years ago and therefore I bought his Musk book with great hopes.  I was not disappointed.  I strongly recommend you read the book.  I know it is very long but it is a story of a guy with many lives (like Musk the PayPal guy, Musk the Tesla billonaire, Musk the space man, Musk of ex-Twitter, etc) blessed with a very sharp mind and a very complex personality.This is neither a critique of the book, which you can find them elsewhere, nor a summary, which would be boring.  I decided to write separate posts on different Musk’s different lives focussing on parts that attract my interest the most.-+-+-+-+Elon Musk Methodology to Successful Product DesignThis week, I want to write about a meta-technology, product design.  I was very interested to read about Musk's design philosophy in the recent Walter Isaacson biography of him.  If I were still teaching Mechanical Engineering Design, as I did for many years at the University of Queensland, I would definitely spend a lecture or two extolling how Musk decided which components to manufacture in-house and which to outsource; and for those to be designed and manufactured in-house, how he asked his engineering team to do product design.Idiot IndexThe “idiot index” calculated how much more costly a finished product was than the cost of its basic materials. If a product had a high idiot index, its cost could be reduced significantly by devising more efficient manufacturing techniques.  Rockets had an extremely high idiot index, over fifty according to Elon Musk.The idiot index of course can never be one.  The book does not tell what the idiot index is for the rockets manufactured by SpaceX.  When, decades ago, I used to work for a manufacturing company, manufacturing ICP spectrometers, we used a multiplier of 3 to represent the cost of any purchased input in our product cost.  For example, suppose you bought a gauge that would be mounted on the surface of the instrument and that gauge cost $100.  Then our estimated product cost would be up by $300. As a first-order estimate, I think this is fairly reliable.The AlgorithmOnce they started on the design of a product, which could be the final product itself or a subsystem, Musk had five commandments that he repeated like a broken record.   Musk called those five commanments his "Algorithm":1.     Question every requirement. Each should come with the name of the person who made it.  Recommendations from smart people are more dangerous because people are less likely to question them.2.     Delete any part or process you can. You may have to add them back later. In fact, if you do not end up adding back at least 10% of them, then you didn’t delete enough.3.     Simplify and optimize. This should come after step two. It is a waste of time to simplify and optimize a part or a process that should not exist.4.     Accelerate cycle time. Every process can be speeded up. But only do this after you have followed the first three steps.  There is no need to try to do it faster if you do not need to do it at the first place.5.     Automate. That comes last. Wait until all the requirements have been questioned, parts and processes deleted, and the bugs shaken out.There are a few corollaries that accompany The Algorithm:All technical managers must have hands-on experience. For example, managers of software teams must spend at least 20% of their time coding. Tesla Energy Solar roof managers must spend time on the roofs doing installations. Otherwise, they are like a cavalry leader who can’t ride a horse or a general who can’t use a sword. (HG: The need for "hands on experience" is common in most corporations but they value "sales" experience not technical.  This is such a refreshing thought.).Comradery is dangerous. It makes it hard for people to challenge each other’s work. There is a tendency to not want to throw a colleague under the bus. That needs to be avoided.It’s OK to be wrong. Just don’t be confident and wrong. (HG: I do not agree with this.  I think you have to be confident all the time but ready to change your mind quickly)Never ask your troops to do something you’re not willing to do.Whenever there are problems to solve, don’t just meet with your managers. Do a skip level, where you meet with the level right above1 your managers.When hiring, look for people with the right attitude. Skills can be taught. Attitude changes require a brain transplant.A maniacal sense of urgency is our operating principle.  (HG: I agree.  That was what I loved about the consulting engineering environment.  To get the job, totally unrealistic deadlines were promised to the client and then everybody would work crazy hours to deliver)The only rules are the ones dictated by the laws of physics. Everything else is a recommendation.Apart from the little notes inserted in between, HG has nothing more to say about the "Algorithm" and its "corollaries."  If any reader is an Engineering Design lecturer, I would be very interested to hear from you what you think about the above and whether you think you might consider including it in your course material.I will continue next week with various lives of of Elon Musk.-+-+-+-+Short TakesWestinghouse, eVinci microreactorLast week I read about this product.  It is a microreactor generating heat only.  The reactor is hermetically sealed in a relatively small enclosure as seen below:The heat is generated in the enclosure and transmitted to outside by heat pipes.  There are no rotating seals, there is no need for cooling water. At face value, it is a good idea to manufacture a hermetically sealed reactor that only generates heat.  The client can use the heat as is or convert it to electricity by using a heat engine.  Westinghouse web page is a bit short on details but one can judge the pysical size from the above picture which represents a 5-MWthermal unit.  I asked for the maximum temperature that we can extract heat from the heat pipe.  If they answer this question, then it will be possible to estimate what 5-MW thermal means in terms of electricity generation because the conversion efficiency is a function of the temperature.-+-+-+-+You TubeThis week’s YouTube video is a song by Emel Mathlouthi, a Tunusian songwriter.  It is not a new song but I just came across it on Spotify in my Weekly Mix yesterday.  This YouTube recording is of her 2017 performance in New York Central Park.The lyrics translated to English:Text within this block will maintain its original spacing when publishedI was born in Palestine
+I have no place,
+and I have no country,
+nor do I have a homeland.
+With my fingers I create fire
+and I sing to you with my heart,
+my heart strings cry:
+ 
+I was born in Palestine,
+I was born in Palestine.
+ 
+I have no place,
+and I have no country,
+nor do I have a homeland.
+ 
+I have no place
+There is no time for me1
+And I have no homeland
+ 
+I make flames with my hands
+and crystals with my heart
+I play a wounded tune for you
+ 
+Born in Palestine
+Born in Palestine
+ 
+I have no place
+There is no fit time for me
+And I have no homeland
+ 
+Born in Palestine
+Born in Palestine
+ 
+My history will never be erased
+ 
+My history can't be forsaken
+It is a song derived from the Spanish “Naci en Alamo,” a lament of loss of home, of basic human rights, that the singer says she "adapted to pay homage to the brave Palestinians, who for decades have endured every kind of deprivation while the world powers only look on from a one-sided stance”. -+-+-+-+Pascal and HagiPascal and Hagi watching me from outside.Last week I wrote about a crow that seemed to have taken over the bird bath siting outside Pascal and Hagi enclosure.  Here is the crow sitting on the edge of the birdbath:and he flied away when I was getting closer to get a better shot:and this is what it left into the water.I think the ideas is that the seeds soften up and he likes them better that way.  In the meantime, smaller birds are scared to approach the bath.  Not an ideal situation.  I keep replacing the water when I see his droppings and he keeps coming back with more.  We will see who is more stubborn.-+-+-+-+DiaryNot much to write on the diary.  We were on Eleanor duty this weekend.  Taylan and Yi went to a wedding in Sunshine Coast. Taylan was the best man for Alistair, who is one of his best friends from high school.  It is a pleasure to look after our granddaughter but it takes time.  That is because I am typing this line in English 1t 3 pm on Monday.  I have not done the Turkish page yet.-+-+-+-+Zika Bread StatisticsI bought sourdough rye bread again this week.  Here are the measurements for the last two weeks:Obviously this is a new culture but it did not rise as it did on 4 October.  This probably means the culture this time was changed on a different and earlier day of the week.  I need to collect more data. See earlier posts if you do not know what I am talking about.-+-+-+-+Share.1The book text said below. which must have been a typo.  Skip level meeting is part of management jargon The purpose of such meetings is to foster open communication, gather feedback, bridge any communication gaps, and gain insights from different organizational levels. These meetings can provide senior leaders with a more direct understanding of ground-level challenges and opportunities and can also allow employees to voice concerns or share ideas that they might not feel comfortable discussing with their immediate manager.2Share this postLet us talk about Elon Muskhalimgur.substack.comCopy linkFacebookEmailNoteOtherSharePreviousNextCommentsTopNewCommunityNo postsReady for more?Subscribe© 2024 Halim GurgenciPrivacy ∙ Terms ∙ Collection notice Start WritingGet the appSubstack is the home for great writing
+
+
+
+
+
+
+
+
+
+
+
+
+        This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts
+    
+
+
+

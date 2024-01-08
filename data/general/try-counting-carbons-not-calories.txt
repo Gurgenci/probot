@@ -1,0 +1,62 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Try counting carbons not calories to have a better control on your weight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Halim’in Günlüğü --- Halim's DiarySubscribeSign inShare this postTry counting carbons not calories to have a better control on your weighthalimgur.substack.comCopy linkFacebookEmailNoteOtherGeneralTry counting carbons not calories to have a better control on your weightIf the carbon input to your body exceeds the carbon output, you will get fat. The metabolic rate, a confounding factor when trying to count calories, does not affect the carbon balance.Halim GurgenciApr 20, 20232Share this postTry counting carbons not calories to have a better control on your weighthalimgur.substack.comCopy linkFacebookEmailNoteOther3ShareThanks for reading Halim’in Günlüğü! Subscribe for free to receive new posts and support my work.SubscribeShare-+-+-+-+‘How many hours does it take to ride a bike to melt a serving of baklava?’ I asked a while ago. Today’s question is easier: Say we ate little and moved more and lost ten kilograms. Where did the fat go? How did those ten kilos leave our bodies? These are the options:Text within this block will maintain its original spacing when published           a. converted to energy and heat
+           b. excreted as faeces
+           c. gone as sweat and urine
+           d. muscle build-up
+           e. none of the aboveThe correct answer is none of the above.As  shown in Fıg 1, on the other hand, the majority of the physicians and dietitians participating in a survey favoured the answer that the fats are "converted in energy and heat". Probably because physics is not a compulsory course for medical students, their answer violating the rule of mass conservation was not a concern to them1.Figure 1 - Responses of a sample of doctors, dieticians, and personal trainers to the question “When somebody loses weight, where does it go?” (Meerman & Brown, 2014).. Burning FatFat tissues accumulating in various parts of our body consist of triglyceride (C55H04O6) molecules. Our bodies do not combust these molecules but get rid of them through a complex sequence of chemical reactions that can be reduced to the the following oxidation equation:\(C_{55}H_{104}O_6+78O_2\rightarrow55CO_2+52H_2O+\text{energy}\)or in graphics:Şekil 2 - When somebody loses 10 kg of fat (triglyceride), 8.4 kg is exhaled as CO2. Lungs are therefore the primary excretory organ for weight loss. (Meerman ve Brown, 2014)At rest, a seventy-kilogram human expels with each breath an average of 33 mg of CO2  or 8.9 mg of carbon (C). In a normal day (sleep, rest and other activities), 203 g of carbon leaves the body through this mechanism. Unfortunately for those who want to control their weight, it is very easy to replace these lost carbon atoms.  For example, it takes only about 3.2 litres of apple juice2.The lost kilos leave the body through the CO2 expelled during respiration- for a 70kg person 1 kg every five days.It did surprise me how the physicians participating in the survey failed to correctly answer the question phrased at the beginning of this post. I think it has something to do with the fact that Medical Education is still the practice-inspired education as it used to be in the 19th century. It is reasonable to place emphasis on the importance of practical skills when training physician candidates who will later be confronting patients on their own, but when theory is completely neglected, the result is sometimes ingenious ignorance.SubscribeDoctors do not quite understand caloriesMedical science, I think, has difficulty understanding or expressing our body's energy budget rules. The following excerpt is from the UK National Health Service website:If you're gaining weight, it could mean you have been regularly eating and drinking more calories than you have been using.To lose weight, you need to use more energy than you consume, and continue this over a period of time  (Understanding calories).These sentences appear almost verbatim in numerous other medical information pages, probably copied and pasted from each other. It is wrong to say that ‘you get fat if the calories you take in exceed the calories you produce' because this implies equating  the body's calorie budget to a bank balance. In a bank account, if the money you deposit exceeds the money you withdraw, the balance increases by the difference, because the money in and the money out are of the same type. However, the calories we consume are not the same as the calories we eat and drink.The calorie output (e.g. the energy exerted while climbing the stairs) and the calorie input (e.g. the energy in a slice of bread eaten) are not equivalent. The calorie input, that is, the calories in the food eaten, is found by measuring the heat the foodstuff gives off when it is burned. The calorie output is mechanical work, not heat.Mechanical work and heatWhen I adjust the load setting on an exercise bike to 200-W, I get exhausted in fifteen minutes. How much energy do I produce in this duration?\(200 \frac{J}{s}\times15\times60=180000 J=180 kJ\)A calorie input of 8700 kilojoules (kJ) per day is recommended for a normal person. If calories entering the body were the same as the calories leaving, I would have to exercise for 12 hours non-stop to consume the recommended 8700 kJ. In fact, I only have to pedal about 3 hours at that load setting to burn 8700 kJ intake3.Energy entering the body and energy leaving the body are different things:The type of energy entering is heat energy, because its value is determined by burning the foodstuffs in a calorimeter (let's call it Q)The type of energy released is mechanical work energy, (let's call it W)The work W is always less than the heat input Q. The ratio is called efficiency.\(\text{Efficiency}, \eta=\frac{\text{Energy Output (Work)}, W}{\text{Energy Input}, Q}\)If our body were a heat engine (like a steam turbine), the highest possible value for this efficiency would have been the ideal heat engine efficiency, the Carnot efficiency:\(\text{Carnot efficiency}, \eta_C=1-\frac{T_C}{T_H}=1-\frac{298}{310}=3.9\text{%}\)For mechanical engineers, this equation needs no explanation, but I will explain the terms for others:TC : The temperature at which the heat engine gets rid of the waste heat (I assume a room temperature 25 C)TH : The temperature at which the energy enters the heat engine (I consider the internal body temperature as 37 C)The resultant efficiency, 3.9 percent, is a very small number. If we worked like a heat engine, we would have all starved. The actual efficiency figure is around 25%.The human body converts the energy in food to mechanical work through chemical means (ATP etc). A separate article is needed to explain, but let's just say that this chemical conversion efficiency is around 25%.ShareMakes more sense to count carbons instead of caloriesI tried to make it as simple as I could, avoiding jargon, but the previous chapter may still be difficult for non-engineering readers to understand.Unfortunately, I do not think it is possible to talk about the calorie balance of the human body, food calories and exercise calories without understanding these issues.A new form of discourse is needed to make the subject more understandable. Perhaps a new narrative on counting incoming and outgoing carbon atoms is simpler.The carbon atoms in a kilo of baklava are the same as those we exhale through the respiratory tract the day after eating that baklava. If the input exceeds the output, you become fat, otherwise you will lose weight. It's that simple. There is no need to invent new concepts such as the fast or slow metabolical rates. It is enough to know the difference between incoming and outgoing carbon.-+-+-+-+ReferencesAinsworth BE, Haskell WL, Herrmann SD, Meckes N, Bassett DR, Jr, Tudor-Locke C, et al. 2011 Compendium of physical activities: a second update of codes and MET values. Med Sci Sports Exerc 2011;43:1575-81. (zikreden Meerman ve Brown, 2014)Karadeniz, F., & Ekşi, A. (2002). Sugar composition of apple juices. European Food Research & Technology, 215(2), 145–148. https://doi.org/10.1007/s00217-002-0505-2Meerman, R., & Brown, A. J. (2014). When somebody loses weight, where does the fat go?. BMJ, 349.Footnotes1According to the equation E=mc^2, matter can turn into energy, but our body is not a nuclear reactor or atomic bomb.2For apple juice, I used the numbers of (Karadeniz and Ekşi, 2002) and calculated the 3.2 number I gave in the text as follows (a python script for those who are interested):CperDay=8.9*12*60*24/1000# Total sugar (mg) ın a litreglucose=27.0fructose=85.5sucrose=40.2total=glucose+fructose+sucroseprint("Total sugar content in 1 liter of Apple Juice produced from Antalya Starking apple: ", total, "g")(C,H,O)=(12,1,16)MWGlucose=6*C+12*H+6*OMWFructose=6*C+12*H+6*OMWSucrose=12*C+22*H+11*Oprint("Molecular weight of glucose: ", MWGlucose)print("Molecular weight of fructose: ", MWFructose)print("Molecular weight of sucrose: ", MWSucrose)Nof_glucose_mols=glucose/MWGlucoseNof_fructose_mols=fructose/MWFructoseNof_sucrose_mols=sucrose/MWSucroseprint("Number of glucose mols: ", Nof_glucose_mols)print("Number of fructose mols: ", Nof_fructose_mols)print("Number of sucrose mols: ", Nof_sucrose_mols)CarbonAtoms=Nof_glucose_mols*6+Nof_fructose_mols*6+Nof_sucrose_mols*12print("Total number of carbon atoms: ", CarbonAtoms)print("Weight of carbon atoms in 1 l apple juice = ", CarbonAtoms*C, "g")C_required=203.0AJ_required=C_required/(CarbonAtoms*C)print("Required amount of apple juice to provide %.0f g carbon= "%C_required, AJ_required, "l")3Python script for those interested:watts=200.0  # Exercise bike settingminutes=15  # Duration of exercisework=watts*minutes*60/1000  # Work done in kJprint("Work produced in %.0f minutes at %.0f W setting = %.0f kJ"%(minutes, watts, work))kJin=8700.0  # Recommended energy intake in kJnof_15minutes=kJin*0.25/workprint("I need %d 15-minute intervals or %.1f hours to burn up %.0f kJ" %(nof_15minutes,   nof_15minutes/4, kJin))Subscribe2Share this postTry counting carbons not calories to have a better control on your weighthalimgur.substack.comCopy linkFacebookEmailNoteOther3SharePreviousNext3 CommentsShare this discussionTry counting carbons not calories to have a better control on your weighthalimgur.substack.comCopy linkFacebookEmailNoteOtherXin SuiJun 9, 2023Liked by Halim GurgenciHow I wish I could have read this blog two years earlier,  when I began to lose weight and control diet. Expand full commentReplyShareHalim GurgenciApr 20, 2023·edited Apr 20, 2023AuthorThere is data but not consumer-grade.  I think there is an opportunity for future app developers.  It is relatively easyand accurate to predict how much CO2 is expelled every day by monitoring the heart beat and breathing rate.  Combined with foodstuff carbon content tables, this would be a better dietary app because it would not depend on one's metabolical rate (i.e. energy conversion efficiency).  Having said this, I have just read an article on Ozempic(a semaglutide-based appetite suppressant) taking the world by storm (including even China).  Provided there are no serious side effects, obesity soon may be a thing of the past.Expand full commentReplyShare1 more comment...TopNewCommunityNo postsReady for more?Subscribe© 2024 Halim GurgenciPrivacy ∙ Terms ∙ Collection notice Start WritingGet the appSubstack is the home for great writing
+
+
+
+
+
+
+
+
+
+
+
+
+        This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts
+    
+
+
+

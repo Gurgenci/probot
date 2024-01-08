@@ -1,0 +1,154 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bridge Fixture for Five Players - by Halim Gurgenci
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Halim’in Günlüğü --- Halim's DiarySubscribeSign inShare this postBridge Fixture for Five Playershalimgur.substack.comCopy linkFacebookEmailNoteOtherGeneralBridge Fixture for Five PlayersWhile preparing a fixture that covers all possible encounters and encounters and does not repeat pairings, I tried the programming skills of Github Copilot and ChatGPT.Halim GurgenciApr 9, 20231Share this postBridge Fixture for Five Playershalimgur.substack.comCopy linkFacebookEmailNoteOtherShareSubscribe-+-+-+-+There came only five players last Friday night for bridge play. When there are six, we divide to three teams by drawing cards. It's the same when seven people come, but the last team (the ones who draw the smallest cards) has three people and one of those three is left out in each turn. If there are eight players as happens occasionally, although not often, then we become four teams.With five people, it's difficult to set up the fixtures, i.e. when to match who and when. This Friday Mehmet suggested a system. It was a mixed system where the smallest card draw player played in different teams, such as the idle gear in a gear box. I don't think we will repeat this solution.Following this, yesterday, I thought I'd write a python program to build a five-man bridge fixture.Github CopilotFirst I thought I'd try VS Code github Copilot. With the help of Github Copilot, you write what the function to do as comment lines, Copilot writes the function itself.  # The following function is used to create a bridge fixture
+# The function takes ia single argument:
+# A list of the player names as strings separated by commas
+# There could be 4 or more players
+# It creates a bridge fixture and writes into a CSV file
+# This fixture will be a table where the first column is the player names
+# The subsequent columns will show the players to play against in each round
+# Each column after the first column will be a round
+# The first round will be the first column after the first column
+# The second round will be the second column after the first column
+# If the player is to play against themselves, the cell will be blank
+# The CSV file is named bridgefixture.csv
+# The CSV file is written to the current directory
+# The CSV file is overwritten if it already exists
+# The CSV file is written in the following format:
+# The first row is the column headings
+# The first column heading is the word "Player"
+# The subsequent column headings are the words "Round" followed by the round number
+# The first column is the player names
+# The subsequent columns are the players to play against in each round
+# If the player is to play against themselves, the cell will be blank
+# The function returns the number of rounds
+# The number of rounds is the number of columns after the first column
+# The number of rounds is the number of rounds in the fixture
+# The number of rounds is the number of rounds in the tournament
+
+# The function does not return anything else
+
+I wrote only the first five lines, Copilot wrote the rest, but could not even start the coding. Then I thought I'd ask ChatGPT.    -+-+-+-+Programmer ChatGPTI copied the above comment lines to ChatGPT so that it would write a matching program. He immediately replied:Certainly! Here's a Python function that should achieve the task as defined in the comments you provided:
+There is no need to copy the code of the program it gave here, because it was wrong.  It prepared a much simpler, unteamed table where each player played with each other. I said it was wrong and tried to explain where the mistake was. It said OK.I apologize for the mistake in my previous implementation. Here is a revised implementation of the create_bridge_fixture function that should produce the correct output as per your specifications:ChatGPT's new program didn't work either. This is how we continued for a few more trials. When ChatGPT's 6th effort didn't work , I suggested that this might a difficult assignment for a Large Language Model (LLM). He said no.I think it is possible to create a bridge fixture with a large language model, but it might be challenging to get it right without some additional information and constraints.
+
+For example, do the players have any preferences or restrictions on who they want to play with or against? Are there any rules about how many times a player can play with or against another player? Also, the function may need to handle cases where the number of players is odd and there is an "odd player out" in each round.
+
+Without these additional constraints, it is possible to generate a fixture that satisfies the basic requirement of each player playing with every other player an equal number of times. However, the fixture may not be optimal in terms of minimizing repeated matchups or satisfying any preferences or restrictions the players may have.
+
+If you can provide more information on the specific requirements and constraints for the bridge fixture, I can try to help you modify the function to meet those requirements.In spite of its bravado, it was clear from this answer that ChatGPT did not understand the issue yet. That's when I switched to Plan B. I decided to developed and present an algorithm for ChatGPT.-+-+-+-+Bridge Fixture AlgorithmIf there is a set with N members. I asked how many pairs would come out of these N members. It immediately replied:That's when I said, the first bridge program problem, how many pairs would be for this set of 10 pairs, we can solve by deleting the results from the final set those entries where where the same player occurred twice. ChatGPT understood this and wrote the program.This time its program worked correctly. I also said please write the result to a CSV file, which it did. I made a few minor changes. They were about the format of the table output in the CSV file. The result is the following program:import csv
+import itertools
+
+def create_bridge_fixture(players):
+    # Step 1: Form all possible teams
+    teams = list(itertools.combinations(players, 2))
+    
+    # Step 2: Pair the teams against each other to form a second set of unordered pairs
+    pairs = list(itertools.combinations(teams, 2))
+    
+    # Step 3: Eliminate pairs where a player appears twice
+    valid_pairs = [pair for pair in pairs if len(set().union(*pair)) == 4]
+    
+    # Create the fixture by assigning teams to rounds
+    num_rounds = len(valid_pairs)
+    fixture = [[] for _ in range(num_rounds)]
+    
+    for round_idx, pair in enumerate(valid_pairs):
+        fixture[round_idx].append(pair[0][0])
+        fixture[round_idx].append(pair[0][1])
+        fixture[round_idx].append(pair[1][0])
+        fixture[round_idx].append(pair[1][1])
+        fixture[round_idx].append([player for player in players if player not in pair[0] and player not in pair[1]][0])
+    
+    return num_rounds, fixture
+
+players = ["A", "B", "C", "D", "E"]
+num_rounds, fixture = create_bridge_fixture(players)
+sorted_fixture = sorted(fixture, key=lambda x: x[-1])
+sorted_fixture = sorted(fixture, key=lambda x: x[-1], reverse=True)
+
+# Print the fixture
+for i, round in enumerate(sorted_fixture):
+    print("Round", i+1, ":", round)
+# Create the array
+arr = [[' ' for _ in range(num_rounds)] for _ in range(len(players))]
+
+# Fill in the array
+for i, row in enumerate(sorted_fixture):
+    for j, player in enumerate(row):
+        if j < 2:
+            arr[players.index(player)][i] = '+'
+        elif j < 4:
+            arr[players.index(player)][i] = 'o'
+        else:
+            arr[players.index(player)][i] = '-'
+            
+
+
+# your code to generate the sorted_fixture array
+
+with open('bridge_fixture.csv', mode='w', newline='') as csv_file:
+    writer = csv.writer(csv_file)
+    # write the header row
+    row=['Players']
+    for i in range(num_rounds):
+        row.append('Round {}'.format(i+1))
+    writer.writerow(row)
+    # write the data rows
+    for i, round_data in enumerate(arr):
+        row = ['ABCDE'[i]]+arr[i]  # Round number
+        writer.writerow(row)Click for the fixture generated by this code.ConclusionChatGPT is not yet at the level to understand a practical problem and create an algorithm according to it and then write the appropriate bespoke program. But when the algorithm is given explicitly, it can create the program literally in seconds and without errors.Share1Share this postBridge Fixture for Five Playershalimgur.substack.comCopy linkFacebookEmailNoteOtherSharePreviousNextCommentsTopNewCommunityNo postsReady for more?Subscribe© 2024 Halim GurgenciPrivacy ∙ Terms ∙ Collection notice Start WritingGet the appSubstack is the home for great writing
+
+
+
+
+
+
+
+
+
+
+
+
+        This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts
+    
+
+
+
