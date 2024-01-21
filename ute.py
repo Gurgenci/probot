@@ -31,10 +31,32 @@ def rdweb(url, filename):
             f.write(text)
     return text
 
-if TEST:
-    (url1, filename1)="https://halimgur.substack.com/p/the-requiem-for-a-dream-israels-untaken", "data/requiem.txt"
-    sep="-+-+-+-+"
-    text=rdweb(url1, filename1, save=False)
+def getassid(datafile, assname=None, assmodel=None, instructions=None, tools=None):
+    # Check if the DataFile exists
+    # If it does, read the Assistant ID from the file
+    if os.path.isfile(datafile):
+        # Read the Assistant ID from the file
+        f = open(datafile, "r")
+        assid = f.read()
+        f.close()
+    else:
+        if any(arg is None for arg in (assname, assmodel, instructions, tools)):
+            print("ERROR: The Assistant ID file does not exist and the arguments are not specified")
+            return ""
+        # Create a new Assistant
+        Assistant = Client.beta.assistants.create(
+        name=assname,
+        model=assmodel,
+        instructions=instructions,
+        tools=[{"type": tools}],
+        # file_ids=UploadID
+        )
+        # Write the Assistant ID to the file
+        assid=Assistant.id
+        f = open(datafile, "w")
+        f.write(assid)
+        f.close()
+    return assid
 
 # The following function takes a text string `text` and separates it to a list
 # of strings using the separator `sep`
@@ -257,54 +279,6 @@ def gettopN(embeddings, metadata, indices, N=3):
     return concat_text
 
 def main():
-    # The following two lines load the local environment variables from the file .env
-    # The .env file is not shared with others because it is listed in the .gitignore file
-    # If you have an OpenAI key, let this program know about it:
-    # 1. Create the file .env in the project folder
-    # 2. Enter the line OPENAI_API_KEY='my-api-key-here' in the .env file
-    import dotenv
-    dotenv.load_dotenv()
-    webfolder="short"
-    # The following line checks if there is an embedding file for the web folder specified.
-    # If not, it creates the embedding file.
-    if not os.path.exists(embeddingfilename(webfolder)):
-        print("\n\nEmbeddings not found")
-        embedweb(webfolder=webfolder, model=DefaultLLM)
-        print("Embeddings created")
-    #
-    # The following updates the embeddings if there are new texts in the text list:
-    print("\n\nCheck if we need to update the embeddings")
-    update=update_embeddings(webfolder=webfolder, model=DefaultLLM)
-    if update:
-        print("Embeddings updated")
-    else:
-        print("Embeddings not updated")
-    print("\n\nLoad Embeddings and show metadata")
-    (embeddings, metadata)=load_embeddings(webfolder="short")
-    showmetadata(metadata)
-    print("\n%d embeddings loaded" % len(embeddings))
-    #
-    # Start the interactive loop
-    # Log the interactions to a file
-    logfile="data/"+webfolder+"_log.md"
-    f = open(logfile, "w")
-    while True:
-        print("\n\nEnter your question or type 'quit' to exit:")
-        question=input()
-        if question=="quit":
-            break
-        f.write("**Q:** "+question+"\n")
-        # Get the embedding for the question
-        ind=getsimilar(embeddings, question)
-        print(ind)
-        # Get the top 3 texts
-        text=gettopN(embeddings, metadata, ind, N=3)
-
-        # Write the text to the logfile
-        f.write("**A:** "+text+"\n")
-        # Print the text
-        print(text)
-    print("Bye!")
-
+    return
 if __name__ == "__main__":
     main()
