@@ -23,8 +23,18 @@ from IPython.display import display, Markdown
 def md(s):
     display(Markdown(s))
 
+# Define the mdc() function to display markdown text with a custom font size
+
+def md_custom(text, size=12):
+    return Markdown(f"<span style='font-size: {size}px;'>{text}</span>")
+
+# Usage
+# display(md_custom("This is some text with a larger font size.", size=18))
+def mdc(s, size=14):
+    display(md_custom(s, size))
+
 def showglobals():
-    s="|Contents|File Name|\n|--|--|\n\
+    s="\n\n|Contents|File Name|\n|--|--|\n\
 |Web folder name|"+webfolder+"|\n\
 |Data folder name|"+datafolder+"|\n\
 |Data file name|"+DataFile+"|\n\
